@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -37,7 +37,7 @@
         </ul>
       </li>
     </ul>
-    <%= form_tag('http://books.nirvawolf.com/Recommendation', class: "navbar-form navbar-left", role: "search") do %>
+    <%= form_tag('http://books.nirvawolf.com/Recommendation', remote: true, class: "navbar-form navbar-left", role: "search", id: "search") do %>
    <!--  <form class="navbar-form navbar-left" role="search"> -->
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search" name="userid">
